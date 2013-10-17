@@ -54,14 +54,9 @@ public class GraphDisplayComponent extends JComponent
 		{
 			// Draw each point black
 			g.setColor(Color.BLACK);
-			for (int i = 0 ; i < m_pointList.size() ; ++i)
-			{
-				g.drawLine(
-						m_pointList.get(i).x,
-						m_pointList.get(i).y,
-						m_pointList.get(i).x,
-						m_pointList.get(i).y);
-			}
+			
+			for (Point p : m_pointList)
+				g.drawLine(p.x, p.y, p.x, p.y);
 		}
 	}
 	
@@ -73,10 +68,7 @@ public class GraphDisplayComponent extends JComponent
 		super.paintComponent(g);
 		
 		if (null != m_image)
-		{
 			g.drawImage(m_image, 0, 0, null);
-		}
-		
 	}
 
 }
