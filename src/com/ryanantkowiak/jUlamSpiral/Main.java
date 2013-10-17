@@ -15,20 +15,21 @@ import javax.swing.JScrollPane;
  */
 public class Main
 {	
+	// The width and height of the internal scrollable area
+	private static final int DATA_WIDTH = 2000;
+	private static final int DATA_HEIGHT = 2000;
+	
+	// The width and height of the gui window
+	private static final int WINDOW_WIDTH = 500;
+	private static final int WINDOW_HEIGHT = 500;
+	
 	/**
 	 * Main static method, create the logic and display components
 	 * @param args
 	 */
 	public static void main(String [] args)
 	{
-		// The width and height of the internal scrollable area
-		final int DATA_WIDTH = 2000;
-		final int DATA_HEIGHT = 2000;
-		
-		// The width and height of the gui window
-		final int WINDOW_WIDTH = 500;
-		final int WINDOW_HEIGHT = 500;
-		
+
 		// Create the logic object
 		UlamSpiralLogic logic = new UlamSpiralLogic();
 		logic.run(DATA_WIDTH, DATA_HEIGHT);
