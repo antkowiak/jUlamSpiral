@@ -14,24 +14,12 @@ import javax.swing.JScrollPane;
  *
  */
 public class Main
-{
-	// Application frame
-	private JFrame m_frame;
-	
+{	
 	/**
-	 * Main static method
+	 * Main static method, create the logic and display components
 	 * @param args
 	 */
 	public static void main(String [] args)
-	{
-		@SuppressWarnings("unused")
-		Main m = new Main();
-	}
-
-	/***
-	 * Create the logic and display components
-	 */
-	public Main()
 	{
 		// The width and height of the internal scrollable area
 		final int DATA_WIDTH = 2000;
@@ -55,11 +43,11 @@ public class Main
 						(DATA_WIDTH - WINDOW_WIDTH)/2,
 						(DATA_HEIGHT - WINDOW_HEIGHT)/2));
 
-		m_frame = new JFrame("Ulam Spiral");
-		m_frame.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
-		m_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		m_frame.getContentPane().add(scrollpane);
-		m_frame.setVisible(true);
+		JFrame frame = new JFrame("Ulam Spiral");
+		frame.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().add(scrollpane);
+		frame.setVisible(true);
 	}
 
 }
