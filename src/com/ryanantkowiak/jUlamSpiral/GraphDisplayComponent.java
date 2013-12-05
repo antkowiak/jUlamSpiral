@@ -46,7 +46,7 @@ public class GraphDisplayComponent extends JComponent
 		
 		Graphics g = m_image.getGraphics();
 		
-		// Start out with a whtie background
+		// Start out with a white background
 		g.setColor(Color.WHITE);
 		g.fillRect(0, 0, getPreferredSize().width, getPreferredSize().height);
 		
