@@ -9,7 +9,7 @@ import java.util.List;
  * The UlamSpiralLogic class creates a list of points that should be shaded in
  * a "Ulam Spiral" as defined at: http://en.wikipedia.org/wiki/Ulam_spiral
  * 
- * @author Ryan Antkowiak (antkowiak@gmail.com)
+ * @author Ryan Antkowiak 
  *
  */
 public class UlamSpiralLogic

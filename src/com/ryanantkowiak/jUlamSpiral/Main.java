@@ -10,7 +10,7 @@ import javax.swing.JScrollPane;
 /**
  * Main class
  * 
- * @author Ryan Antkowiak (antkowiak@gmail.com)
+ * @author Ryan Antkowiak 
  *
  */
 public class Main

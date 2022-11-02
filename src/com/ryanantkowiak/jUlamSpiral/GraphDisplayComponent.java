@@ -11,7 +11,7 @@ import javax.swing.JComponent;
 /**
  * This class paints the Ulam Spiral
  * 
- * @author Ryan Antkowiak (antkowiak@gmail.com)
+ * @author Ryan Antkowiak 
  *
  */
 public class GraphDisplayComponent extends JComponent
